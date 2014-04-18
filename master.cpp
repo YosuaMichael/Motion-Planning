@@ -347,6 +347,7 @@ void execute() {
 			time(&now);
 			curTime = difftime(now, start2);
 			//printf("\n%d, car: x=%lf, yTot=%lf, V= %lf, Theta: %lf\n NumCollide: light=%u; heavy=%u , time: %lf\n",i,car.getX(), yTotal, car.getV(), (car.getTheta()-M_PI/2)*180.0/M_PI, numLightCollision, numHeavyCollision, curTime);
+			/* OUTPUT DATA 
 			count=0;
 			if (count2 >= 50)
 			{
@@ -385,6 +386,7 @@ void execute() {
 					assert( (printf("10000s of DATA TAKEN\n"), 0));
 				}
 			}
+			*/
 		}
 		
 		for (int j = 0; j < NUMBER_OF_PEDESTRIANS; j++) {
